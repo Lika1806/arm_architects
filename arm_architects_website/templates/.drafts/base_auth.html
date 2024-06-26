@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <mata charset ='utf-8'>
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1">
+        <title>Arm-Architects {% block title%} {% endblock %}</title>   
+        <!--<link rel="stylesheet" href="../static/css/styles.css">  -->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/genereal_styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/variables.css' %}">
+
+    </head>
+
+    <body>
+
+    </body>
+    {% include "partials/_header.html" %}
+    <h3>***This is made with base auth wrapper</h3>
+    <main>
+
+        {% block content %}
+  
+  
+        {% endblock%}
+
+    <!--{% include "partials/_footer.html" %}-->
+
+    </main>
+</html>

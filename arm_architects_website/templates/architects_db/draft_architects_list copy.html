@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1><br><br>This is Architects list<br><br></h1>
+{% for item in all %}
+    <p>{{ item }}</p>
+{%endfor%}
+
+
+    <div>
+        <div class="profile-form-vertical">
+            <div class="element-line-black"></div>
+            <div class="profile-form-info-section">
+                <div class="profile-form-architect-full_name"><h3>FirstName</h3></div> <!--{%firstname%} {%lastname%}-->
+                <div class="profile-form-architect-nickname"><h2>nickname</h2></div> <!--{%nickname%}-->
+                
+                <ul class="profile-form-info">
+                    <li class="profile-form-info-filed">Birth Year:</li> <!--{%birth_year%}-->
+                    <li class="profile-form-info-filed">Birth Place:</li> <!--{%birth_place%}-->
+                    <li class="profile-form-info-filed">Death Year: </li><!--{%death_year%}-->
+                    <li class="profile-form-info-filed">Styles: </li><!--{%styles%}-->
+                    
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock  %}

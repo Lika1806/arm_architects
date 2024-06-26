@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+
+/*Header*/
+.navbar {
+    background: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-div {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;   
+    align-items: center;
+    z-index: inherit;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar-logo {
+    color: black;
+    justify-content:center;
+    padding: 5px;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-header-footer {
+    height: 50px;
+    margin-right: 10px;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-logo {
+    margin-right: 8px;
+    align-items: center;
+
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+}
+
+.navbar-item {
+    margin: 10px 20px;
+    color: grey;
+}
+
+.navbar-item:hover {
+    color:black;
+}
+
+.navbar-button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    margin-left: 20px;
+}
+
+.navbar-button:hover {
+    background-color: grey;
+}
+
+
+
+/*Footer*/
+.footer {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 30px 0;
+}
+
+
+
+.footer-div {
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    max-width: 1152px;
+    padding: 0 50px;
+    
+    
+}
+
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#footer-logo {
+    justify-content:center;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.footer-contacts {
+
+    list-style: none;
+
+}
+.footer-contacts-list {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+
+#media-logo {
+    padding: 10px;
+}
+
+.footer-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+

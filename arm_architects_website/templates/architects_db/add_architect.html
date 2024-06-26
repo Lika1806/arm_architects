@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<h1><br><br>Fill the blank to add architect<br><br></h1>
+
+<div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-title">
+                <h4>Add an Architect</h4>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input 
+                        type="text" 
+                        name="first_name" 
+                        placeholder="first name"
+                        id="first_name_field" 
+                        class="form-control"
+                        />
+                    </div>
+                    <div class="invalid-first_name invalid-feedback" style="display:none">
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                        type="text" 
+                        name="last_name" 
+                        placeholder="last name"
+                        id="last_name_field" 
+                        class="form-control"
+                        />
+                    </div>
+                    <div class="invalid-last_name invalid-feedback" style="display:none"></div>
+                    
+                    <div class="form-group">
+                        <input 
+                        type="text" 
+                        name="nickname" 
+                        placeholder="nickname"
+                        id="nickname_field" 
+                        class="form-control"
+                        />
+                    </div>
+                    <div class="invalid-nickname invalid-feedback" style="display:none">
+                    </div>
+
+                    <div class="form-group">
+                        <select name="gender" 
+                        id="gender_field" 
+                        class="form-control">
+                            <option value="" disabled selected>Select gender</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                    <div class="invalid-gender invalid-feedback" style="display:none">
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                        type="date" 
+                        name="date_of_birth" 
+                        placeholder="Date of birth"
+                        id="date_of_birth_field" 
+                        class="form-control"/>
+                    </div>
+                    <div class="invalid-date_of_birth invalid-feedback" style="display:none">
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                        type="date" 
+                        name="date_of_death" 
+                        placeholder="Date of death"
+                        id="date_of_death_field" 
+                        class="form-control"
+                        />
+                    </div>
+                    <div class="invalid-date_of_death invalid-feedback" style="display:none">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea 
+                        name="biography" 
+                        placeholder="biography"
+                        id="biography_field" 
+                        class="form-control"
+                        ></textarea>
+                    </div>
+                    <div class="invalid-biography invalid-feedback" style="display:none">
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                        type="file" 
+                        name="image" 
+                        placeholder="Architect's image"
+                        id="image_field" 
+                        class="form-control-file"
+                        />
+                    </div>
+                    <div class="invalid-image invalid-feedback" style="display:none">
+                    </div>
+
+                    <input type="submit" value="Add" class="button btn-block btn-colored-1"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+
+<script src="{% static 'js/register.js' %}"></script>
+{% endblock %}
